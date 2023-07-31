@@ -1,0 +1,218 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Headline: Fitness and Health Tracking -->
+    <TextView
+        android:id="@+id/text_view_headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fitness and Health Tracking"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:background="#b5caff"
+        android:paddingBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- LinearLayout for Steps -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_steps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#018786" />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/steps" />
+
+            <Button
+                android:id="@+id/button_steps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your steps" />
+
+        </LinearLayout>
+
+        <!-- LinearLayout for Weights -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_weights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weights"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#018786" />
+
+            <ImageView
+                android:id="@+id/dataReceived"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/weight" />
+
+            <Button
+                android:id="@+id/button_weights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your weight" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- LinearLayout for Blood Pressure -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_blood_pressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blood Pressure"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#018786" />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/blood_pressure" />
+
+            <Button
+                android:id="@+id/button_blood_pressure"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:text="Plot data" />
+
+        </LinearLayout>
+
+        <!-- LinearLayout for Heart Rates -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_heart_rates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Heart Rates"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#018786" />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/heart_rate" />
+
+            <Button
+                android:id="@+id/button_heart_rates"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:text="Plot data" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- LinearLayout for Sleep Duration -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_sleep_duration"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:text="Sleep Duration"
+                android:textColor="#018786"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:src="@drawable/sleep_duration" />
+
+            <Button
+                android:id="@+id/button_sleep_duration"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:text="Plot data" />
+
+        </LinearLayout>
+
+        <!-- LinearLayout for Body Temperature -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_body_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:text="Body Temperature"
+                android:textColor="#018786"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:src="@drawable/body_temperature" />
+
+            <Button
+                android:id="@+id/button_body_temperature"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:text="Plot data" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
